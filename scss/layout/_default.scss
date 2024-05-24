@@ -1,63 +1,65 @@
-body{
-    font-family: 'JioType', sans-serif;
-    overflow-x: hidden;
-    overflow-y: auto;
+body {
+	font-family: 'DIN', sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
 	width: 100%;
 	height: 100%;
+	color: #222222;
+	background: #fdf9f9;
 }
 
-::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 10px;
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 	background-color: $danger;
 }
 
-a{
-  text-decoration: none;
-  @include transition(all ease 250ms);
+a {
+	text-decoration: none;
+	@include transition(all ease 250ms);
 
-  &:hover{
-  }
+	&:hover {}
 }
 
-img{
+img {
 	@extend .img-fluid;
 }
 
-.container{
-    
-    max-width: 1245px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+
+	max-width: 1245px;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-section{
-	&.block{
+section {
+	&.block {
 		padding: 50px 0;
-		
-		@include media-breakpoint-down(md){
+
+		@include media-breakpoint-down(md) {
 			padding: 30px 0;
 		}
 	}
 
-	&.darkBg{
+	&.darkBg {
 		color: #fff;
 
-		.cTitle{
-			h2{
+		.cTitle {
+			h2 {
 				color: #fff;
-				&:after{
+
+				&:after {
 					background: #fff;
 				}
 			}
@@ -65,46 +67,45 @@ section{
 	}
 }
 
-main{
+main {
 	padding-top: 80px;
 }
 
-.sticky{
-	main{
+.sticky {
+	main {
 		// padding-top: 70px;
 	}
 }
 
-.btn{
+.btn {
 	font-size: 14px;
 	@include border-radius(0);
 	padding: 10px 50px;
 	font-weight: 700;
 
-	&.btn-outline-danger{
+	&.btn-outline-danger {
 		padding: 14px 20px;
 		background: #fff;
 
-		i{
+		i {
 			position: relative;
 			@include transform(translateX(0px));
 			@include transition(all 250ms ease);
 		}
 
-		&:hover{
+		&:hover {
 			background: $danger;
-			i{
+
+			i {
 				@include transform(translateX(6px));
 			}
 		}
 	}
 
-	@include media-breakpoint-down(sm){
-		
-	}
+	@include media-breakpoint-down(sm) {}
 }
 
-.btn-arrow{
+.btn-arrow {
 	position: relative;
 	color: #D61F08;
 	font-size: 10px;
@@ -112,13 +113,13 @@ main{
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 
-	.fa{
+	.fa {
 		@include transition(all ease 250ms);
 		@include transform(translateX(0px));
 	}
 
-	&:hover{
-		.fa{
+	&:hover {
+		.fa {
 			@include transform(translateX(8px));
 		}
 	}
@@ -170,25 +171,25 @@ main{
 }
 
 
-.breadcrumbs{
+.breadcrumbs {
 	padding: 20px 0 0;
 
-	.breadcrumb{
+	.breadcrumb {
 		display: inline-flex;
 		background: #EFF1F3;
 		padding: 8px 20px;
 		@include border-radius(0px);
 		margin: 0;
 
-		.breadcrumb-item{
+		.breadcrumb-item {
 			font-size: 12px;
 
-			a{
+			a {
 				color: #666666;
 				font-weight: 500;
 			}
 
-			&.active{
+			&.active {
 				color: #000;
 				font-weight: 700;
 			}
@@ -196,22 +197,22 @@ main{
 	}
 }
 
-.nav-tabs{
+.nav-tabs {
 
-	.nav-item{
+	.nav-item {
 		position: relative;
 	}
 
-	.nav-link{
+	.nav-link {
 		border: none;
 		font-size: 16px;
 		font-weight: 500;
 		color: #666666;
 		max-width: 270px;
-    	margin: 0 auto;
+		margin: 0 auto;
 		padding: 0.5rem;
 
-		&:after{
+		&:after {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -225,20 +226,21 @@ main{
 			transition: all ease-in-out 250ms;
 		}
 
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			font-size: 14px
 		}
 
-		&.active, &:hover{
+		&.active,
+		&:hover {
 			color: $primary;
 
-			&:after{
+			&:after {
 				opacity: 1;
 				visibility: visible;
 			}
 		}
 
-		img{
+		img {
 			display: block;
 			margin: 0 auto 10px;
 			text-align: center;
@@ -246,7 +248,7 @@ main{
 			max-height: 58px;
 			height: 58px;
 
-			@include media-breakpoint-down(md){
+			@include media-breakpoint-down(md) {
 				max-width: 40px;
 				max-height: 40px;
 				height: 40px;
@@ -255,10 +257,10 @@ main{
 	}
 }
 
-.tab-content{
+.tab-content {
 	padding: 20px 0 0;
 
-	p{
+	p {
 		font-size: 16px;
 		color: #666666;
 	}
@@ -266,21 +268,21 @@ main{
 
 //
 .sidebar-overlay {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    background: #000;
-    z-index: 997;
-    @include transition(opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1));
-    @include transform(translateZ(0));
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background: #000;
+	z-index: 997;
+	@include transition(opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1));
+	@include transform(translateZ(0));
 
-    &.active {
-        opacity: 0.75;
-        visibility: visible;
-        @include transition-delay(0);
-    }
+	&.active {
+		opacity: 0.75;
+		visibility: visible;
+		@include transition-delay(0);
+	}
 }

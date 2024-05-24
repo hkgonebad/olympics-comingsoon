@@ -1,38 +1,64 @@
-
-$fontPath: '../fonts/jiotype/';
+$fontPath: '../fonts/din/';
 
 @font-face {
-    font-family: 'JioType';
-    src: url('#{$fontPath}JioType-Bold.woff2') format('woff2'),
-        url('#{$fontPath}JioType-Bold.woff') format('woff');
+    font-family: 'DIN';
+    src: url('#{$fontPath}DINNextLTPro-Bold.woff2') format('woff2'),
+    url('#{$fontPath}DINNextLTPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'JioType';
-    src: url('#{$fontPath}JioType-Light.woff2') format('woff2'),
-        url('#{$fontPath}JioType-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'DIN';
+    src: url('#{$fontPath}DINNextLTPro-Regular.woff2') format('woff2'),
+    url('#{$fontPath}DINNextLTPro-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'JioType';
-    src: url('#{$fontPath}JioType-Black.woff2') format('woff2'),
-        url('#{$fontPath}JioType-Black.woff') format('woff');
-    font-weight: 900;
+    font-family: 'DIN Free';
+    src: url('#{$fontPath}DIN-Regular.woff2') format('woff2'),
+    url('#{$fontPath}DIN-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'JioType';
-    src: url('#{$fontPath}JioType-Medium.woff2') format('woff2'),
-        url('#{$fontPath}JioType-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'JioType';
+//     src: url('#{$fontPath}JioType-Bold.woff2') format('woff2'),
+//         url('#{$fontPath}JioType-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'JioType';
+//     src: url('#{$fontPath}JioType-Light.woff2') format('woff2'),
+//         url('#{$fontPath}JioType-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'JioType';
+//     src: url('#{$fontPath}JioType-Black.woff2') format('woff2'),
+//         url('#{$fontPath}JioType-Black.woff') format('woff');
+//     font-weight: 900;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'JioType';
+//     src: url('#{$fontPath}JioType-Medium.woff2') format('woff2'),
+//         url('#{$fontPath}JioType-Medium.woff') format('woff');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
