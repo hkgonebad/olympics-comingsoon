@@ -185,6 +185,20 @@
             flex-direction: column-reverse;
             text-align: left;
 
+            position: relative;
+
+            &:after {}
+
+            &:not(:last-child) {
+                &:after {
+                    content: ':';
+                    position: absolute;
+                    right: 0px;
+                    font-size: 40px;
+                    color: $primary;
+                }
+            }
+
             h2,
             .simply-amount {
                 font-size: 44px;
@@ -233,6 +247,12 @@
 
     max-width: 822px;
     margin: 2rem auto 0;
+
+    transition: all ease-in-out 250ms;
+
+    &:hover {
+        border-color: $primary;
+    }
 
     img {
         position: absolute;

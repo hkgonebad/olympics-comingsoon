@@ -20,7 +20,7 @@ $(function () {
       //words displayed into the countdown
       days: { singular: "day", plural: "days" },
       hours: { singular: "hour", plural: "hours" },
-      minutes: { singular: "min", plural: "min" },
+      minutes: { singular: "min", plural: "mins" },
       seconds: { singular: "sec", plural: "sec" },
     },
     plural: true, //use plurals
