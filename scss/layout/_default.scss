@@ -1,5 +1,7 @@
 body {
-	font-family: 'DIN', sans-serif;
+	// font-family: 'DIN', sans-serif;
+	font-family: 'JioType', sans-serif;
+	font-weight: normal;
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: 100%;
@@ -34,7 +36,6 @@ img {
 }
 
 .container {
-
 	max-width: 1245px;
 	width: 100%;
 	padding-right: 15px;
@@ -68,7 +69,17 @@ section {
 }
 
 main {
-	padding-top: 80px;
+	// padding-top: 80px;
+}
+
+.secHeader {
+	// text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 24px;
+	}
 }
 
 .sticky {
