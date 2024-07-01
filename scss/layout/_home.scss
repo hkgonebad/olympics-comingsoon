@@ -158,3 +158,33 @@
     }
 
 }
+
+
+
+// Upcoming Events
+.upcomingEvents {
+    background: #F7F8F9;
+}
+
+// Team India
+.teamIndia {
+    background-image: url('../img/bg/teamindia-bg.jpg');
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+        background-position: center;
+    }
+}
+
+
+// Sponsor
+.sponsor {
+    background: #fff;
+}
+
+// Partners
+.partners {
+    background: #F6F6F6;
+}

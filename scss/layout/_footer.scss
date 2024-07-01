@@ -10,3 +10,120 @@
 
     }
 }
+
+
+.mainFooter {
+    background: $primary;
+    color: #fff;
+    padding: 40px 0 0px;
+}
+
+.topFooter {
+
+    .fBox {}
+
+    .fAbout {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            height: 108px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 15px;
+        }
+    }
+
+    .fLinks {
+
+        // Divide this into two cols using flexbox
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                flex-basis: 50%;
+                margin-bottom: 10px;
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 5px 0;
+                    transform: translateX(0);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $secondary;
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    .fImg {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        img {
+            transform: translateY(37px);
+        }
+    }
+}
+
+.bottomFooter {
+    padding: 20px 0;
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+    }
+
+    .fSocial {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            display: inline-block;
+            padding: 5px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
