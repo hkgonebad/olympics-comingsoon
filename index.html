@@ -60,70 +60,91 @@
 
             <!-- Coming Soon Timer -->
             <div class="comingSoon">
-                <i class="fa fa-stopwatch"></i>
-                <p>Olympic Games Paris 2024 : 26 July - 11 August, 2024</p>
+                <i class="fa fa-stopwatch" id="openCs"></i>
+                <p>Olympic Games Paris 2024 : <span>26 July - 11 August, 2024</span></p>
                 <div class="csTimer"></div>
-                <a href="#!" class="btn"><i class="fa fa-times"></i></a>
+                <a href="#!" class="btn btn-text" id="closeCs"><i class="fa fa-times"></i></a>
             </div>
         </section>
 
         <!-- Upcoming Events -->
         <section class="upcomingEvents block">
             <div class="container">
-                <div class="secTitle arrows">
+                <div class="secTitle arrows" data-aos="fade-up">
                     <h2>Upcoming Events</h2>
 
                     <div class="sArrows">
-                        <a href="#!" class="prev ePrev"><i class="fa fa-angle-left"></i></a>
-                        <a href="#!" class="next eNext"><i class="fa fa-angle-right"></i></a>
+                        <a href="#!" class="prev ePrev"><i class="fa fa-arrow-left-long"></i></a>
+                        <a href="#!" class="next eNext"><i class="fa fa-arrow-right-long"></i></a>
                     </div>
                 </div>
 
-                <div class="events">
+                <div class="events" data-aos="fade-up">
                     <div class="slick slick-theme eventSlider">
 
-                        <div class="eventBox">
-                            <div class="ebImg">
-                                <img src="img/events/1.png" alt="Event">
-                            </div>
-                            <div class="ebContent">
-                                <h3>Archery</h3>
-                                <p><i class="fa fa-calendar"></i> Wednesday, 12 June 2024</p>
-                                <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
-                                <p><i class="fa fa-map-marker"></i> Paris, France</p>
-                                <a href="#!" class="btn btn-secondary">Book Ticket</a>
-                            </div>
-                        </div>
-
-                        <div class="eventBox">
-                            <div class="ebImg">
-                                <img src="img/events/2.png" alt="Event">
-                            </div>
-                            <div class="ebContent">
-                                <h3>Boxing</h3>
-                                <p><i class="fa fa-calendar"></i> Thursday, 13 June 2024</p>
-                                <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
-                                <p><i class="fa fa-map-marker"></i> Paris, France</p>
-                                <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                        <div class="item">
+                            <div class="eventBox">
+                                <div class="ebImg">
+                                    <img src="img/events/1.png" alt="Event">
+                                </div>
+                                <div class="ebContent">
+                                    <h3>Archery</h3>
+                                    <p><i class="fa fa-calendar"></i> Wednesday, 12 June 2024</p>
+                                    <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
+                                    <p><i class="fa fa-map-marker"></i> Paris, France</p>
+                                    <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="eventBox">
-                            <div class="ebImg">
-                                <img src="img/events/3.png" alt="Event">
+                        <div class="item">
+                            <div class="eventBox">
+                                <div class="ebImg">
+                                    <img src="img/events/2.png" alt="Event">
+                                </div>
+                                <div class="ebContent">
+                                    <h3>Boxing</h3>
+                                    <p><i class="fa fa-calendar"></i> Thursday, 13 June 2024</p>
+                                    <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
+                                    <p><i class="fa fa-map-marker"></i> Paris, France</p>
+                                    <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                                </div>
                             </div>
-                            <div class="ebContent">
-                                <h3>Swimming</h3>
-                                <p><i class="fa fa-calendar"></i> Friday, 14 June 2024</p>
-                                <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
-                                <p><i class="fa fa-map-marker"></i> Paris, France</p>
-                                <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                        </div>
+
+                        <div class="item">
+                            <div class="eventBox">
+                                <div class="ebImg">
+                                    <img src="img/events/3.png" alt="Event">
+                                </div>
+                                <div class="ebContent">
+                                    <h3>Swimming</h3>
+                                    <p><i class="fa fa-calendar"></i> Friday, 14 June 2024</p>
+                                    <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
+                                    <p><i class="fa fa-map-marker"></i> Paris, France</p>
+                                    <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="eventBox">
+                                <div class="ebImg">
+                                    <img src="img/events/2.png" alt="Event">
+                                </div>
+                                <div class="ebContent">
+                                    <h3>Boxing</h3>
+                                    <p><i class="fa fa-calendar"></i> Thursday, 13 June 2024</p>
+                                    <p><i class="fa fa-clock"></i> 6:00 AM (GMT+2)</p>
+                                    <p><i class="fa fa-map-marker"></i> Paris, France</p>
+                                    <a href="#!" class="btn btn-secondary">Book Ticket</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="btns text-center mt-4">
-                        <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right"></i></a>
+                        <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right-long"></i></a>
                     </div>
 
                 </div>
@@ -210,7 +231,7 @@
                         </div>
 
                         <div class="btns text-center mt-4">
-                            <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right"></i></a>
+                            <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right-long"></i></a>
                         </div>
 
                     </div>
@@ -252,33 +273,8 @@
                     <h2>Our Sponsors</h2>
                 </div>
 
-                <div class="sponsorsRow imgGrid">
-
-                    <div class="sponsorBox igBox">
-                        <img src="img/sponsors/1.png" alt="Sponsor">
-                    </div>
-
-                    <div class="sponsorBox igBox">
-                        <img src="img/sponsors/2.png" alt="Sponsor">
-                    </div>
-
-                    <div class="sponsorBox">
-                        <img src="img/sponsors/3.png" alt="Sponsor">
-                    </div>
-
-                    <div class="sponsorBox">
-                        <img src="img/sponsors/4.png" alt="Sponsor">
-                    </div>
-
-                    <div class="sponsorBox">
-                        <img src="img/sponsors/5.png" alt="Sponsor">
-                    </div>
-
-                    <div class="sponsorBox">
-                        <img src="img/sponsors/6.png" alt="Sponsor">
-                    </div>
-
-                </div>
+                <!-- Sponsor Grid -->
+                <div class="sponsorsRow imgGrid" id="sponsorData"></div>
             </div>
         </section>
 
@@ -289,33 +285,8 @@
                     <h2>Our Partners</h2>
                 </div>
 
-                <div class="partnersRow imgGrid">
-
-                    <div class="partnerBox igBox">
-                        <img src="img/partners/1.png" alt="Partner">
-                    </div>
-
-                    <div class="partnerBox igBox">
-                        <img src="img/partners/2.png" alt="Partner">
-                    </div>
-
-                    <div class="partnerBox">
-                        <img src="img/partners/3.png" alt="Partner">
-                    </div>
-
-                    <div class="partnerBox">
-                        <img src="img/partners/4.png" alt="Partner">
-                    </div>
-
-                    <div class="partnerBox">
-                        <img src="img/partners/5.png" alt="Partner">
-                    </div>
-
-                    <div class="partnerBox">
-                        <img src="img/partners/6.png" alt="Partner">
-                    </div>
-
-                </div>
+                <!-- Partner Grid -->
+                <div class="partnersRow imgGrid" id="partnerData"></div>
             </div>
         </section>
 

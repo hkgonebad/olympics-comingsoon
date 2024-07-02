@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: $secondary;
+	background-color: $primary;
 }
 
 a {
@@ -70,6 +70,10 @@ section {
 
 main {
 	padding-top: 98px;
+
+	@include media-breakpoint-down(md) {
+		padding-top: 68px;
+	}
 }
 
 .secHeader {
@@ -93,6 +97,7 @@ main {
 	@include border-radius(40px);
 	padding: 10px 30px;
 	font-weight: 500;
+	transition: all 0.5s ease-in-out;
 
 	&.btn-secondary {
 		color: #fff;
@@ -112,10 +117,13 @@ main {
 .btn-arrow {
 	position: relative;
 	color: #000000CC;
-
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@include media-breakpoint-down(md) {
+		font-size: 16px;
+	}
 
 	.fa {
 		color: $danger;
@@ -217,6 +225,10 @@ main {
 		border: 1px solid #0000001A;
 		color: #333;
 		text-transform: uppercase;
+
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 
 		&.active,
 		&:hover,

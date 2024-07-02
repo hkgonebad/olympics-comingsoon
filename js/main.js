@@ -68,6 +68,13 @@ AOS.init({
 });
 
 /////////////////////////////////////
+document.getElementById("openCs").addEventListener("click", function () {
+  document.querySelector(".comingSoon").classList.remove("hideCs");
+});
+
+document.getElementById("closeCs").addEventListener("click", function () {
+  document.querySelector(".comingSoon").classList.add("hideCs");
+});
 
 ///////////////////////////////////
 $(function () {
@@ -130,9 +137,9 @@ $(function () {
         return;
       }, //Callback on countdown end, put your own function here
       refresh: 1000, // default refresh every 1s
-      sectionClass: "simply-section", //section css class
-      amountClass: "simply-amount", // amount css class
-      wordClass: "simply-word", // word css class
+      sectionClass: "csBox", //section css class
+      amountClass: "csNumber", // amount css class
+      wordClass: "csWord", // word css class
       zeroPad: true,
       countUp: true,
     });
@@ -179,11 +186,13 @@ $(function () {
     $(".mainSlider").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
       // autoplay: true,
       autoplayDuration: 2000,
-      arrows: false,
+      arrows: true,
       pauseOnHover: false,
+      prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left-long'></i></button>",
+      nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right-long'></i></button>",
     });
   }
 
@@ -200,18 +209,60 @@ $(function () {
 
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
           },
         },
         {
-          breakpoint: 400,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
           },
         },
       ],
     });
+
+    $(".ePrev").click(function () {
+      $(".eventSlider").slick("slickPrev");
+    });
+
+    $(".eNext").click(function () {
+      $(".eventSlider").slick("slickNext");
+    });
   }
+
+  // Sponsors
+  // Load sponsor data from the JSON file
+  $.getJSON("data/sponsors.json", function (sponsors) {
+    const $container = $("#sponsorData");
+
+    $.each(sponsors, function (index, sponsor) {
+      const sponsorHtml = `
+        <div class="sponsorBox igBox">
+          <img src="${sponsor.imgSrc}" alt="${sponsor.altText}">
+        </div>
+      `;
+      $container.append(sponsorHtml);
+    });
+  }).fail(function () {
+    console.error("An error occurred while loading the sponsor data.");
+  });
+
+  // Partners
+  // Load partner data from the JSON file
+  $.getJSON("data/partners.json", function (partners) {
+    const $container = $("#partnerData");
+
+    $.each(partners, function (index, partner) {
+      const partnerHtml = `
+        <div class="partnerBox igBox">
+          <img src="${partner.imgSrc}" alt="${partner.altText}">
+        </div>
+      `;
+      $container.append(partnerHtml);
+    });
+  }).fail(function () {
+    console.error("An error occurred while loading the partner data.");
+  });
 });
