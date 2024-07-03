@@ -64,7 +64,7 @@ function hasScrolled() {
 
 //AOS
 AOS.init({
-  duration: 600,
+  duration: 800,
 });
 
 /////////////////////////////////////
@@ -232,6 +232,9 @@ $(function () {
     });
   }
 
+  // Aos refresh
+  AOS.refresh();
+
   // Sponsors
   // Load sponsor data from the JSON file
   $.getJSON("data/sponsors.json", function (sponsors) {
@@ -239,7 +242,7 @@ $(function () {
 
     $.each(sponsors, function (index, sponsor) {
       const sponsorHtml = `
-        <div class="sponsorBox igBox">
+        <div class="sponsorBoxx igBox">
           <img src="${sponsor.imgSrc}" alt="${sponsor.altText}">
         </div>
       `;
