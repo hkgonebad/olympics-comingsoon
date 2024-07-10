@@ -38,6 +38,66 @@
     }
 }
 
+// Experiences
+.experiences {
+    background-image: url('../img/bg/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .slick-prev,
+    .slick-next {
+        width: 30px;
+
+        &:before {
+            display: none;
+        }
+
+        @include media-breakpoint-down(md) {
+            right: 0;
+
+        }
+    }
+
+    .slick-prev {
+        transform: scale(-1, 1);
+
+        @include media-breakpoint-down(md) {
+            left: 0;
+            right: initial;
+        }
+    }
+}
+
+.esBox {
+    text-align: center;
+    margin: 0 auto 20px;
+
+    .esImg {
+        height: 72px;
+        margin-bottom: 20px;
+
+        img {
+            max-width: 72px;
+            max-height: 72px;
+            margin: 0 auto;
+        }
+    }
+
+    .esInfo {
+        h4 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #fff;
+
+            @include media-breakpoint-down(md) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 .nmaSection {
     position: relative;
 
@@ -195,6 +255,10 @@
     margin: 2rem auto 0;
     padding-bottom: 4rem;
 
+    @include media-breakpoint-down(md) {
+        padding-bottom: 1rem;
+    }
+
     img {
         position: absolute;
         left: 0;
@@ -229,52 +293,4 @@
     }
 
     &.nma {}
-}
-
-.infosection {
-    position: relative;
-    z-index: 9;
-    margin-top: -50px;
-
-    .nmainfobox {
-        display: flex;
-        border: 2px solid #F599D2;
-        border-radius: 12px;
-        background-color: #fff;
-
-        .box {
-            flex: 1;
-            padding: 20px 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            &:first-child {
-                border-right: 2px solid #F599D2;
-            }
-
-            p {
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 20px;
-                text-align: center;
-                color: #222;
-                margin: 0;
-
-                a {
-                    font-size: 15px;
-                    font-weight: bold;
-                    display: block;
-                    color: #344DA1;
-                    text-decoration: none;
-                    margin-top: 10px;
-
-                    &:hover {
-                        color: #EAAF0C;
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
 }

@@ -249,6 +249,20 @@ $(function () {
       arrows: true,
       prevArrow: "<button type='button' class='slick-prev pull-left'><img src='img/icons/long-arrow.svg'></button>",
       nextArrow: "<button type='button' class='slick-next pull-right'><img src='img/icons/long-arrow.svg'></button>",
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ],
     });
   }
 

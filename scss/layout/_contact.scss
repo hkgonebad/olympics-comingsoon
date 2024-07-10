@@ -1,0 +1,68 @@
+.contactPage {
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+.cBox {
+    border-radius: 0px 36px 0px 36px;
+    background-color: #F6F6F6;
+    padding: 30px 20px 20px 20px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(md) {
+        height: auto;
+    }
+
+    .fa {
+        color: $secondary;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: 700;
+        border-bottom: 1px solid #E5E5E5;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+        a {
+            color: #000000;
+        }
+    }
+}
+
+.accordion {
+
+    .accordion-item {
+        border-radius: 0px 16px 0px 16px;
+        border: 1px solid #00000033;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        .accordion-button {
+            background: #fff;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:hover,
+            &:not(.collapsed) {
+                color: $secondary;
+            }
+        }
+    }
+}
