@@ -68,12 +68,19 @@ AOS.init({
 });
 
 /////////////////////////////////////
-document.getElementById("openCs").addEventListener("click", function () {
-  document.querySelector(".comingSoon").classList.remove("hideCs");
-});
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the comingSoon element exists
+  const comingSoonElement = document.querySelector(".comingSoon");
 
-document.getElementById("closeCs").addEventListener("click", function () {
-  document.querySelector(".comingSoon").classList.add("hideCs");
+  if (comingSoonElement) {
+    document.getElementById("openCs").addEventListener("click", function () {
+      comingSoonElement.classList.remove("hideCs");
+    });
+
+    document.getElementById("closeCs").addEventListener("click", function () {
+      comingSoonElement.classList.add("hideCs");
+    });
+  }
 });
 
 ///////////////////////////////////
@@ -191,8 +198,8 @@ $(function () {
       autoplayDuration: 2000,
       arrows: true,
       pauseOnHover: false,
-      prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left-long'></i></button>",
-      nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right-long'></i></button>",
+      prevArrow: "<button type='button' class='slick-prev pull-left'><img src='img/icons/long-arrow.svg'></button>",
+      nextArrow: "<button type='button' class='slick-next pull-right'><img src='img/icons/long-arrow.svg'></button>",
     });
   }
 
@@ -209,7 +216,7 @@ $(function () {
 
       responsive: [
         {
-          breakpoint: 800,
+          breakpoint: 1000,
           settings: {
             slidesToShow: 2,
           },
@@ -231,6 +238,22 @@ $(function () {
       $(".eventSlider").slick("slickNext");
     });
   }
+
+  // Experiences Slider
+  if ($(".expSlider").length > 0) {
+    $(".expSlider").slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: true,
+      prevArrow: "<button type='button' class='slick-prev pull-left'><img src='img/icons/long-arrow.svg'></button>",
+      nextArrow: "<button type='button' class='slick-next pull-right'><img src='img/icons/long-arrow.svg'></button>",
+    });
+  }
+
+  // Fancybox
+  Fancybox.bind();
 
   // Aos refresh
   AOS.refresh();

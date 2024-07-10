@@ -66,6 +66,10 @@ section {
 			}
 		}
 	}
+
+	&.grayBg {
+		background: #F7F8F9;
+	}
 }
 
 main {
@@ -107,12 +111,18 @@ main {
 			background: #fff;
 			color: $secondary;
 		}
+
+		&.btn-hollow {
+			&:hover {
+				background: transparent;
+				color: #fff;
+				border-color: #fff;
+			}
+		}
 	}
 
 	@include media-breakpoint-down(sm) {}
 }
-
-
 
 .btn-arrow {
 	position: relative;
@@ -120,22 +130,50 @@ main {
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
 
 	@include media-breakpoint-down(md) {
 		font-size: 16px;
 	}
 
-	.fa {
+	.fa,
+	img {
 		color: $danger;
 		@include transition(all ease 250ms);
 		@include transform(translateX(0px));
 	}
 
 	&:hover {
-		.fa {
+
+		.fa,
+		img {
 			@include transform(translateX(8px));
 		}
 	}
+}
+
+.form-group {
+	&.icon {
+		position: relative;
+
+		.fa,
+		.far {
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			color: #000000B2;
+			font-size: 14px;
+		}
+	}
+}
+
+.form-control,
+.form-select {
+	@include border-radius(40px);
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .slick-dots {

@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <title>Paris Olympics</title>
@@ -74,8 +75,8 @@
                     <h2>Upcoming Events</h2>
 
                     <div class="sArrows">
-                        <a href="#!" class="prev ePrev"><i class="fa fa-arrow-left-long"></i></a>
-                        <a href="#!" class="next eNext"><i class="fa fa-arrow-right-long"></i></a>
+                        <a href="#!" class="prev ePrev"><img src="img/icons/left-arrow.svg" alt=""></a>
+                        <a href="#!" class="next eNext"><img src="img/icons/right-arrow.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -144,7 +145,7 @@
                     </div>
 
                     <div class="btns text-center mt-4">
-                        <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right-long"></i></a>
+                        <a href="#!" class="btn btn-arrow">View All <img src="img/icons/right-arrow.svg" alt=""></a>
                     </div>
 
                 </div>
@@ -168,11 +169,11 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="mediaCentreTabContent" data-aos="fade-up">
+                    <!--  -->
                     <div class="tab-pane fade show active" id="videosTab" role="tabpanel">
-
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="mediaBox mediaMain">
+                                <div class="mediaBox mediaMain mediaVideo" data-fancybox="video" data-caption="Australian Open 2024 badminton: HS Prannoy loses to Kodai Naraoka; India’s campaign ends" href="https://www.youtube.com/watch?v=oumyjV2PBGA">
                                     <div class="mbImg">
                                         <img src="img/media/big.png" alt="Media">
                                     </div>
@@ -181,8 +182,8 @@
                                         <div class="mbMeta">
                                             <p><b>By Ali Asgar Nalwala</b> | 14 June 2024 16:14 GMT+5:30</p>
                                             <div class="shareBtns">
-                                                <a href="#!"><i class="fa fa-share"></i></a>
-                                                <a href="#!"><i class="fa fa-download"></i></a>
+                                                <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                                <a href="#!"><img src="img/icons/download.svg" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -191,7 +192,7 @@
 
                             <div class="col-md-4">
                                 <!-- Live -->
-                                <div class="mediaBox mediaLive">
+                                <div class="mediaBox mediaLive ">
                                     <div class="mbImg">
                                         <img src="img/media/small.png" alt="Media">
                                     </div>
@@ -202,7 +203,7 @@
 
                                 <!-- Rest of the medias -->
                                 <div class="mediaScroll">
-                                    <div class="mediaBox">
+                                    <div class="mediaBox mediaVideo">
                                         <div class="mbImg">
                                             <img src="img/media/1.png" alt="Media">
                                         </div>
@@ -212,9 +213,13 @@
                                                 <p><b>By Courtney Hill</b> | 13 June 2024 21:56 GMT+5:30</p>
                                             </div>
                                         </div>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
                                     </div>
 
-                                    <div class="mediaBox">
+                                    <div class="mediaBox mediaVideo">
                                         <div class="mbImg">
                                             <img src="img/media/2.png" alt="Media">
                                         </div>
@@ -224,6 +229,10 @@
                                                 <p><b>By Venkateswaran N</b> | 13 June 2024 14:17 GMT+5:30</p>
                                             </div>
                                         </div>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -231,7 +240,87 @@
                         </div>
 
                         <div class="btns text-center mt-4">
-                            <a href="#!" class="btn btn-arrow">View All <i class="fa fa-arrow-right-long"></i></a>
+                            <a href="#!" class="btn btn-arrow">View All <img src="img/icons/right-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="tab-pane fade " id="imagesTab" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mediaBox mediaImage" data-fancybox="gallery" data-caption="Title goes herer" href="img/media/GT1.png">
+                                    <div class="mbImg">
+                                        <img src="img/media/GT1.png" alt="Media">
+                                    </div>
+                                    <div class="mbContent">
+                                        <h3>Title goes herer</h3>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mediaBox mediaImage" data-fancybox="gallery" data-caption="Title goes herer" href="img/media/GT3.png">
+                                    <div class="mbImg">
+                                        <img src="img/media/GT3.png" alt="Media">
+                                    </div>
+                                    <div class="mbContent">
+                                        <h3>Title goes herer</h3>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mediaBox mediaImage" data-fancybox="gallery" data-caption="Title goes herer" href="img/media/GT2.png">
+                                    <div class="mbImg">
+                                        <img src="img/media/GT2.png" alt="Media">
+                                    </div>
+                                    <div class="mbContent">
+                                        <h3>Title goes herer</h3>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mediaBox mediaImage" data-fancybox="gallery" data-caption="Title goes herer" href="img/media/GT4.png">
+                                    <div class="mbImg">
+                                        <img src="img/media/GT4.png" alt="Media">
+                                    </div>
+                                    <div class="mbContent">
+                                        <h3>Title goes herer</h3>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mediaBox mediaImage" data-fancybox="gallery" data-caption="Title goes herer" href="img/media/GT5.png">
+                                    <div class="mbImg">
+                                        <img src="img/media/GT5.png" alt="Media">
+                                    </div>
+                                    <div class="mbContent">
+                                        <h3>Title goes herer</h3>
+                                        <div class="shareBtns">
+                                            <a href="#!"><img src="img/icons/share.svg" alt=""></a>
+                                            <a href="#!"><img src="img/icons/download.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btns text-center mt-4">
+                            <a href="#!" class="btn btn-arrow">View All <img src="img/icons/right-arrow.svg" alt=""></a>
                         </div>
 
                     </div>
@@ -253,7 +342,7 @@
 
                         <p class="mb-3 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
-                        <a href="#!" class="btn btn-secondary">Read More</a>
+                        <a href="https://olympic.ind.in/" class="btn btn-secondary btn-hollow" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>
@@ -300,6 +389,7 @@
 <!-- JS -->
 <script src="js/vendor/jquery-3.4.1.min.js"></script>
 <script src="js/vendor/simplyCountdown.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 

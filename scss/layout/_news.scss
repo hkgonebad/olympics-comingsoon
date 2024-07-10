@@ -1,0 +1,124 @@
+.nuBox {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #DEDEDE;
+    border-radius: 0px 36px 0px 36px;
+    background: #fff;
+    margin-bottom: 20px;
+
+    .nuImg {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0px 36px 0px 36px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .nuContent {
+        padding: 20px;
+
+        span {
+            color: #3C3C3C;
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+
+            .fa {
+                margin-right: 10px;
+            }
+        }
+
+        h3 {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-clamp: 2;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 40px;
+        }
+
+
+        p {
+            font-size: 14px;
+            color: #00000099;
+            line-clamp: 3;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 60px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.newsDetail {
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+        }
+    }
+
+    .ndMeta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #3C3C3C;
+            display: inline-block;
+        }
+
+        .ndSocial {
+            display: inline-flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+    }
+
+    .ndImg {
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #00000099;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .ndContent {
+
+        p {
+            color: #000000CC;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
