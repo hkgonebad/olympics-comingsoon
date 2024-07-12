@@ -306,3 +306,31 @@ $(function () {
     console.error("An error occurred while loading the partner data.");
   });
 });
+
+$(function () {
+  // Isotope
+  var $grid = $(".grid").isotope({
+    itemSelector: ".grid-item",
+    percentPosition: true,
+    masonry: {
+      columnWidth: ".grid-sizer",
+      // gutter: 15,
+    },
+  });
+
+  // Layout Isotope after each image loads
+  $grid.imagesLoaded().progress(function () {
+    $grid.isotope("layout");
+  });
+
+  // Reinitialize Isotope when tab changes
+  const tabs = document.querySelectorAll('#mediaCentreTab [data-bs-toggle="tab"]');
+  tabs.forEach((tab) => {
+    tab.addEventListener("shown.bs.tab", (event) => {
+      console.log("Tab changed!");
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope("layout");
+      });
+    });
+  });
+});
