@@ -29913,19 +29913,45 @@ header {
   padding: 40px 0 0px;
 }
 
+/* line 23, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+.topFooter .fLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin: -90px auto 0;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* line 32, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+.topFooter .fLogo img {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* line 39, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+.topFooter .fLogo span {
+  font-weight: 300;
+  display: block;
+  margin-top: 10px;
+}
+
 @media (max-width: 767.98px) {
-  /* line 25, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+  /* line 48, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
   .topFooter .fAbout {
     margin-bottom: 30px;
   }
 }
 
-/* line 30, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 53, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fAbout img {
   height: 108px;
 }
 
-/* line 34, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 57, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fAbout p {
   font-size: 16px;
   font-weight: 300;
@@ -29933,23 +29959,26 @@ header {
   margin-top: 15px;
 }
 
-/* line 46, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 65, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+.topFooter .fLinks {
+  margin-top: 30px;
+}
+
+/* line 70, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fLinks ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
-/* line 54, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
-.topFooter .fLinks ul li {
-  flex-basis: 50%;
-  margin-bottom: 10px;
-}
-
-/* line 58, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 86, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fLinks ul li a {
   position: relative;
   display: inline-block;
@@ -29961,7 +29990,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* line 68, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 97, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fLinks ul li a:before {
   content: '';
   position: absolute;
@@ -29975,43 +30004,43 @@ header {
   transition: all 0.3s ease;
 }
 
-/* line 81, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 110, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fLinks ul li a:hover, .topFooter .fLinks ul li a.active, .topFooter .fLinks ul li a:focus, .topFooter .fLinks ul li a:active {
   padding-left: 10px;
 }
 
-/* line 88, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 117, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fLinks ul li a:hover:before, .topFooter .fLinks ul li a.active:before, .topFooter .fLinks ul li a:focus:before, .topFooter .fLinks ul li a:active:before {
   opacity: 1;
   visibility: visible;
 }
 
 @media (max-width: 767.98px) {
-  /* line 98, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+  /* line 127, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
   .topFooter .fImg {
     display: none;
   }
 }
 
-/* line 103, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 132, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .topFooter .fImg img {
   transform: translateY(37px);
 }
 
-/* line 109, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 138, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .bottomFooter {
   padding: 20px 0;
 }
 
 @media (max-width: 767.98px) {
-  /* line 109, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+  /* line 138, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
   .bottomFooter {
     text-align: center;
     padding: 15px 0;
   }
 }
 
-/* line 117, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 146, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .bottomFooter p {
   font-size: 14px;
   font-weight: 300;
@@ -30019,7 +30048,7 @@ header {
   margin: 0;
 }
 
-/* line 124, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 153, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .bottomFooter .fSocial {
   text-align: right;
   display: flex;
@@ -30030,7 +30059,7 @@ header {
 }
 
 @media (max-width: 767.98px) {
-  /* line 124, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+  /* line 153, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
   .bottomFooter .fSocial {
     text-align: center;
     margin-top: 10px;
@@ -30038,7 +30067,7 @@ header {
   }
 }
 
-/* line 138, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 167, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .bottomFooter .fSocial a {
   color: #fff;
   font-size: 16px;
@@ -30047,7 +30076,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* line 145, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
+/* line 174, ../laragon/www/olympics-comingsoon/scss/layout/_footer.scss */
 .bottomFooter .fSocial a:hover {
   color: #FF008C;
 }
@@ -30471,6 +30500,7 @@ header {
 /* line 351, ../laragon/www/olympics-comingsoon/scss/layout/_home.scss */
 .partners {
   background: #F6F6F6;
+  padding-bottom: 100px !important;
 }
 
 /* line 1, ../laragon/www/olympics-comingsoon/scss/layout/_page.scss */

@@ -20,6 +20,29 @@
 
 .topFooter {
 
+    .fLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin: -90px auto 0;
+        max-width: 300px;
+        text-align: center;
+
+        img {
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        span {
+            font-weight: 300;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
     .fBox {}
 
     .fAbout {
@@ -40,6 +63,7 @@
     }
 
     .fLinks {
+        margin-top: 30px;
 
         // Divide this into two cols using flexbox
 
@@ -47,13 +71,17 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-around;
             margin: 0;
             padding: 0;
             list-style: none;
+            text-align: center;
 
             li {
-                flex-basis: 50%;
-                margin-bottom: 10px;
+                // flex-basis: 50%;
+                // margin-bottom: 10px;
 
                 a {
                     position: relative;
@@ -63,6 +91,7 @@
                     font-weight: 500;
                     padding: 5px 0;
                     padding-left: 0;
+                    // transform: translateX(0);
                     transition: all 0.3s ease;
 
                     &:before {
@@ -83,7 +112,7 @@
                     &:focus,
                     &:active {
                         padding-left: 10px;
-
+                        // transform: translateX(5px);
 
                         &:before {
                             opacity: 1;
