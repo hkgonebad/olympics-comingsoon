@@ -510,10 +510,12 @@
 }
 
 .mediaImage {
+    // cursor: pointer;
 
     .mbImg {
         &:after {
             content: '\f06e';
+            display: none;
         }
     }
 

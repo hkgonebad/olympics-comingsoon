@@ -289,6 +289,22 @@ $(function () {
     console.error("An error occurred while loading the sponsor data.");
   });
 
+  // Load sponsor data from the JSON file
+  $.getJSON("data/sponsors2.json", function (sponsors) {
+    const $container = $("#sponsorData2");
+
+    $.each(sponsors, function (index, sponsor) {
+      const sponsorHtml = `
+        <div class="sponsorBoxx igBox">
+          <img src="${sponsor.imgSrc}" alt="${sponsor.altText}">
+        </div>
+      `;
+      $container.append(sponsorHtml);
+    });
+  }).fail(function () {
+    console.error("An error occurred while loading the sponsor data.");
+  });
+
   // Partners
   // Load partner data from the JSON file
   $.getJSON("data/partners.json", function (partners) {
