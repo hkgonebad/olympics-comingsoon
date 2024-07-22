@@ -111,12 +111,13 @@
                     &.active,
                     &:focus,
                     &:active {
-                        padding-left: 10px;
+                        // padding-left: 10px;
+                        color: $secondary ;
                         // transform: translateX(5px);
 
                         &:before {
-                            opacity: 1;
-                            visibility: visible;
+                            // opacity: 1;
+                            // visibility: visible;
                         }
                     }
                 }

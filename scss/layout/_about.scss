@@ -81,6 +81,8 @@
             max-width: 72px;
             max-height: 72px;
             margin: 0 auto;
+            transform: scale(1);
+            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -95,6 +97,15 @@
                 font-size: 18px;
             }
         }
+    }
+
+    &:hover {
+        .esImg {
+            img {
+                transform: scale(.8);
+            }
+        }
+
     }
 }
 

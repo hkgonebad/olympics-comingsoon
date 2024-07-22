@@ -267,7 +267,9 @@ $(function () {
   }
 
   // Fancybox
-  Fancybox.bind();
+  if ($("[data-fancybox]").length > 0) {
+    Fancybox.bind();
+  }
 
   // Aos refresh
   AOS.refresh();
@@ -325,28 +327,31 @@ $(function () {
 
 $(function () {
   // Isotope
-  var $grid = $(".grid").isotope({
-    itemSelector: ".grid-item",
-    percentPosition: true,
-    masonry: {
-      columnWidth: ".grid-sizer",
-      // gutter: 15,
-    },
-  });
+  // Check if the grid element exists
+  if ($(".grid").length > 0) {
+    var $grid = $(".grid").isotope({
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      masonry: {
+        columnWidth: ".grid-sizer",
+        // gutter: 15,
+      },
+    });
 
-  // Layout Isotope after each image loads
-  $grid.imagesLoaded().progress(function () {
-    $grid.isotope("layout");
-  });
+    // Layout Isotope after each image loads
+    $grid.imagesLoaded().progress(function () {
+      $grid.isotope("layout");
+    });
 
-  // Reinitialize Isotope when tab changes
-  const tabs = document.querySelectorAll('#mediaCentreTab [data-bs-toggle="tab"]');
-  tabs.forEach((tab) => {
-    tab.addEventListener("shown.bs.tab", (event) => {
-      console.log("Tab changed!");
-      $grid.imagesLoaded().progress(function () {
-        $grid.isotope("layout");
+    // Reinitialize Isotope when tab changes
+    const tabs = document.querySelectorAll('#mediaCentreTab [data-bs-toggle="tab"]');
+    tabs.forEach((tab) => {
+      tab.addEventListener("shown.bs.tab", (event) => {
+        console.log("Tab changed!");
+        $grid.imagesLoaded().progress(function () {
+          $grid.isotope("layout");
+        });
       });
     });
-  });
+  }
 });
